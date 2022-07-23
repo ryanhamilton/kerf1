@@ -6,8 +6,6 @@ jobs:
     steps:
         - name: Checkout Source Code
           uses: actions/checkout@v3
-        - name: build depends
-          run: "apt-get update; apt-get install -y libedit-dev"
         - name: make
           run: "cd src; make"
         - name: test
